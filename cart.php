@@ -2,16 +2,15 @@
 session_start();
 include 'db.php';
 
-// Initialize cart if empty
+
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
 
-// Add to Cart
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["product_id"])) {
     $product_id = $_POST["product_id"];
 
-    // Check if product already in cart, increase quantity
     if (isset($_SESSION['cart'][$product_id])) {
         $_SESSION['cart'][$product_id]++;
     } else {
@@ -22,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["product_id"])) {
     exit();
 }
 
-// Remove from Cart
 if (isset($_GET["remove"])) {
     $product_id = $_GET["remove"];
     unset($_SESSION['cart'][$product_id]);
@@ -30,7 +28,6 @@ if (isset($_GET["remove"])) {
     exit();
 }
 
-// Update Cart
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["update_cart"])) {
     foreach ($_POST['quantity'] as $product_id => $qty) {
         if ($qty > 0) {
@@ -54,7 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["update_cart"])) {
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="index.php">🎁 The Gift Station</a>

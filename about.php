@@ -27,7 +27,7 @@ session_start();
 </head>
 <body>
 
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="#">🎁 The Gift Station</a>
@@ -49,7 +49,7 @@ session_start();
     </div>
 </nav>
 
-<!-- Hero Section -->
+
 <div class="container section">
     <div class="row align-items-center">
         <div class="col-md-6">
@@ -65,7 +65,7 @@ session_start();
     </div>
 </div>
 
-<!-- Our Story -->
+
 <div class="container section">
     <div class="about-container">
         <h3 class="text-center">✨ Our Story</h3>
@@ -80,7 +80,7 @@ session_start();
     </div>
 </div>
 
-<!-- Mission & Vision -->
+
 <div class="container section">
     <div class="vision-mission text-center">
         <h3>🎯 Our Mission</h3>
@@ -95,7 +95,7 @@ session_start();
     </div>
 </div>
 
-<!-- Why Choose Us -->
+
 <div class="container section">
     <div class="about-container">
         <h3 class="text-center">💡 Why Choose <span class="highlight">Us?</span></h3>
@@ -108,7 +108,7 @@ session_start();
     </div>
 </div>
 
-<!-- Customer Testimonials -->
+
 <div class="container section">
     <h3 class="text-center">🗣️ What Our Customers Say</h3>
     <div class="row mt-4">
@@ -133,7 +133,7 @@ session_start();
     </div>
 </div>
 
-<!-- Contact Section -->
+
 <div class="container text-center section">
     <h3>📞 Get In Touch</h3>
     <p>
@@ -143,7 +143,7 @@ session_start();
     <a href="products.php" class="btn btn-success btn-lg">🎁 Explore Our Collection</a>
 </div>
 
-<!-- Footer -->
+
 <div class="footer">
     <p>© 2024 The Gift Station. All rights reserved.</p>
 </div>

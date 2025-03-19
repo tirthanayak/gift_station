@@ -2,9 +2,6 @@
 require 'db.php';
 session_start();
 
-
-
-// Fetch categories and subcategories
 $categoriesQuery = "SELECT * FROM categories";
 $categoriesResult = $conn->query($categoriesQuery);
 ?>
@@ -51,7 +48,6 @@ $categoriesResult = $conn->query($categoriesQuery);
 </head>
 <body>
 
-<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="#">🎁 The Gift Station</a>
@@ -103,7 +99,6 @@ $categoriesResult = $conn->query($categoriesQuery);
     </button>
 </div>
 
-<!-- Categories Section -->
 <div class="container category-section">
     <?php while ($category = $categoriesResult->fetch_assoc()): ?>
         <div class="mb-4">
